@@ -11,12 +11,13 @@ function passwordCheck(filename) {
         let count = 0;
         const password = lineArray[2];
         const letter = lineArray[1];
-        for (let i = 0; i < password.length; i++) {
-            if (password[i] === letter) {
-                count++;
-            }
+        if (password[min - 1] == letter) {
+            count++;
         }
-        if (count >= min && count <= max) {
+        if (password[max - 1] == letter) {
+            count++;
+        }
+        if (count === 1) {
             validCount++;
         }
     });
