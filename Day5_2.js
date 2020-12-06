@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-function treeCount(filename, rightPara, downPara) {
+function treeCount(filename) {
     const data = fs.readFileSync(filename, 'utf8').split("\n");
     let hightestId = 0;
     let sortedArray = [];
