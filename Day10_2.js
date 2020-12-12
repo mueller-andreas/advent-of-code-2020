@@ -29,7 +29,7 @@ function getCombinationCount(adaptersInt) {
                     combinations *= 7;
                     break;
                 case 6:
-                    combinations *= 12;
+                    combinations *= 13;
                     break;
                 default: 
                     //console.log("Groupsize: " + groupSize);
