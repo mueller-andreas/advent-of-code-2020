@@ -1,5 +1,4 @@
 const fs = require("fs");
-const { get } = require("http");
 
 function countDiffs(filename) {
     const adapters = fs.readFileSync(filename, 'utf8').split("\n");

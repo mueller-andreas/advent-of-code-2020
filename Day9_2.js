@@ -1,5 +1,4 @@
 const fs = require("fs");
-const { get } = require("http");
 
 function getRange(filename) {
     const numbers = fs.readFileSync(filename, 'utf8').split("\n");
