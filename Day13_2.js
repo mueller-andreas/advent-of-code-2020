@@ -14,14 +14,10 @@ function getBus(filename) {
     }
     let timestamp = 1;
     console.log(busArray);
-    //koeffArray.push([busArray[0][0], 6]);
     while(i !== busArray.length) {
-        //console.log(busLines[i]);
         const busLine = busArray[i][0];
         const busOffset = busArray[i][1];
         if ((timestamp + busOffset) % busLine === 0) {
-            //i++;
-            //koeffArray.push([busLine, (timestamp + busOffset) / busLine]);
             koeffArray.push([busArray[i][0], 0])
             console.log(koeffArray);
             i++;
@@ -46,5 +42,3 @@ function recursiveTry(koeffArray, i) {
 }
 
 console.log(getBus('./Input/Day13.txt'));
-//console.log(getBus('./Input/test.txt'));
-//console.log(getBus('./Input/test2.txt'));
